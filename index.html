@@ -15,6 +15,16 @@
         .black{
             border-color: black;
         }
+        .nobottomborder{
+            border-bottom: none;
+        }
+        .notopborder{
+            border-top: none;
+        }
+        .border{
+            border-top: none;
+            border-bottom: none;
+        }
     </style>
     <body>
         <table width="100%">
@@ -39,7 +49,7 @@
                 </div>
             </td>
         </table>
-        <table border="1" width="100%" class="text-center">
+        <table border="1" cellspacing="0" width="100%" class="text-center">
             <tr >
                 <td>
                     <b>Student Information</b>
@@ -99,21 +109,56 @@
                 <td>Room</td>
                 <td>Instructor</td>
             </tr>
-            <tr>
-                <td rowspan="2">Web System and Technologies</td>
-                <td rowspan="2">3.00</td>
-                <td rowspan="2">20619 / BSIT602</td>
-                <td>Th</td>
-                <td class="text-left">2:00PM - 5:00PM</td>
-                <td class="text-left">Comlab3</td>
-                <td class="text-left" rowspan="2">Calija, Vincent Bryan Faulve</td>
+            <tr >
+                <td rowspan="2" class ="nobottomborder">
+                    Web System and Technologies
+                </td>
+                <td rowspan="2" class ="nobottomborder">
+                    3.00
+                </td>
+                <td rowspan="2" class ="nobottomborder">
+                    20619 / BSIT602
+                </td>
+                <td class ="nobottomborder">
+                    Th
+                </td>
+                <td class ="nobottomborder" > 
+                    <!-- <div class="text-left"></div>    2:00PM - 5:00PM </div> -->
+                    2:00PM - 5:00PM
+                </td>
+                <td class ="nobottomborder" >
+                    Comlab3
+                </td>
+                <td class ="nobottomborder" rowspan="2" >
+                    Calija, Vincent Bryan Faulve
+                </td>
             </tr>
             <tr>
-                <td>M</td>
-                <td class="text-left">5:00PM - 7:00PM</td>
-                <td class="text-left">104</td>
+                <td class ="border">M</td>
+                <td class ="border" class="text-left">
+                    <!-- <div class="text-left"> 5:00PM - 7:00PM </div> -->
+                    5:00PM - 7:00PM
+                </td>
+                <td class ="border" class="text-left">104</td>
             </tr>
-
+            <tr>
+                <td class ="border"> Great Books</td>
+                <td class ="border">3.00</td>
+                <td class ="border">20632 / BSIT02</td>
+                <td class ="border">MTh</td>
+                <td class ="border">12:00PM - 1:30PM</td>
+                <td class ="border">401</td>
+                <td class ="border">Saveron, Sittie</td>
+            </tr>
+            <tr>
+                <td class="border">Management Information Systems</td>
+                <td class="border">3.00</td>
+                <td class="border">20632 / BSIT602</td>
+                <td class="border">MTh</td>
+                <td class="border">12:00PM - 6:30PM</td>
+                <td class="border"></td>
+                <td class="border"></td>
+            </tr>
         </table>
     </body>
 </html>
